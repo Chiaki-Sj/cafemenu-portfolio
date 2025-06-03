@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dot Café</title>
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+  <body>
+      <header>
+        <img src="maid.png" alt="メイド" style="height: 64px; vertical-align: middle;">
+        <h1 style="display: inline-block; margin: 0 1rem; font-size: 2.5rem;">Dot Café</h1>
+        <img src="butler.png" alt="執事" style="height: 64px; vertical-align: middle;">
+      </header>
+
+
+        <main>
+          <section class="menu">
+            <div class="item">
+              <img src="burger.png" alt="ハンバーガー">
+              <h2>ハンバーガー</h2>
+              <p>ジューシーなお肉のバーガー</p>
+              <button onclick="order('ハンバーガー')">注文する</button>
+            </div>
+
+            <div class="item">
+              <img src="cake.png" alt="ケーキ">
+              <h2>ケーキ</h2>
+              <p>ふんわり苺のショートケーキ</p>
+              <button onclick="order('ケーキ')">注文する</button>
+            </div>
+
+            <div class="item">
+              <img src="coffee.png" alt="コーヒー">
+              <h2>コーヒー</h2>
+              <p>香り高いホットコーヒー</p>
+              <button onclick="order('コーヒー')">注文する</button>
+            </div>
+
+            <div class="item">
+              <img src="pudding.png" alt="プリン">
+              <h2>プリン</h2>
+              <p>おいしいプリン</p>
+              <button onclick="order('プリン')">注文する</button>
+            </div>
+
+            <div class="item">
+              <img src="pancake.png" alt="パンケーキ">
+              <h2>パンケーキ</h2>
+              <p>昔ながらのパンケーキ</p>
+              <button onclick="order('パンケーキ')">注文する</button>
+            </div>
+          </section>
+        </main>
+
+        <div id="modal" class="modal hidden">
+          <p id="modal-text"></p>
+          <button onclick="confirmOrder()">はい</button>
+          <button onclick="closeModal()">いいえ</button>
+        </div>
+          <!-- 注文完了モーダル -->
+          <div id="thankyou-modal" class="modal hidden">
+            <p id="thankyou-text">ご注文ありがとうございます！💖</p>
+            <button onclick="closeThankyou()">OK</button>
+          </div>
+
+        <footer>
+          <p>© 2025 Dot Café | 素材提供: DOT ILLUST</p>
+          <p><a href="https://dot-illust.net/" target="_blank" rel="noopener noreferrer">DOT ILLUST</a></p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
