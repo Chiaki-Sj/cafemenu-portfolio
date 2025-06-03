@@ -36,7 +36,7 @@ function showThankyou() {
   
 
   text.innerHTML = `
-    <p>${currentOrder} を注文しました！ありがとうございます 💖</p>
+    <p>${currentOrder} 注文しました！ありがとうございます 💖</p>
     <img src="maid.png" alt="メイド" style="width: 80px; margin-top: 1rem;">
   `;
 
